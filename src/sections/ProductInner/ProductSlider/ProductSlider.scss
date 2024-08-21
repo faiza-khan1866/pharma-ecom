@@ -1,0 +1,22 @@
+@import "../../../styles/variables";
+.product-slider-wrape {
+  .image-gallery-fullscreen-button .image-gallery-svg {
+    height: 20px;
+    width: 20px;
+  }
+  .image-gallery-image {
+    border-radius: 0;
+  }
+  .image-gallery-thumbnail .image-gallery-thumbnail-image {
+    border-radius: 0;
+  }
+  .image-gallery-thumbnail {
+    border: 1px solid #e6e6e6;
+  }
+  .image-gallery-thumbnail.active,
+  .image-gallery-thumbnail:hover,
+  .image-gallery-thumbnail:focus {
+    border: 1px solid $primary-color;
+    border-radius: 0;
+  }
+}

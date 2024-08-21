@@ -1,0 +1,30 @@
+@import "../../styles/variables";
+.theme-breadcrumbs {
+  margin: 2rem 0;
+  .breadcrumb {
+    margin-bottom: 0;
+    a {
+      color: $para_color;
+      font-size: 15px;
+      font-weight: 400;
+      text-decoration: none;
+    }
+    li {
+      font-size: 15px;
+      font-weight: 400;
+      text-transform: capitalize;
+      &::before {
+        content: "›" !important;
+        font-size: 15px;
+      }
+      &:nth-child(1) {
+        &::before {
+          display: none;
+        }
+      }
+    }
+    .breadcrumb-item.active {
+      color: $primary-color;
+    }
+  }
+}

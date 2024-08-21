@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+.footer-bottom-wrape {
+  padding: 20px 0;
+  border-top: 1px solid $border-color;
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    color: $black;
+    margin: 0;
+    @media #{$sm} {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  }
+  .payment-Wraper {
+    text-align: right;
+    @media #{$sm} {
+      text-align: center;
+    }
+  }
+}

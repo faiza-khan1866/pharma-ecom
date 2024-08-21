@@ -1,0 +1,64 @@
+@import "../../../styles/variables";
+.product_deal_wrape {
+  .promo_mbl_space {
+    @media #{$xsm} {
+      margin-bottom: 2rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .image-container {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+    height: fit-content;
+    .description-wrape {
+      padding: 2rem;
+      .new_badge {
+        background: #12a05c;
+        padding: 0.5rem 1rem;
+        color: $white;
+        border-radius: 50px;
+        font-size: 12px;
+      }
+      .title {
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 25px;
+        color: $primary-color;
+        margin: 1rem 0 0 0;
+        @media #{$sm} {
+          font-size: 18px;
+        }
+      }
+      .discount {
+        font-size: 35px;
+        font-weight: 100;
+        color: $footer_hover_color;
+        margin: 0;
+      }
+      .shop_btn {
+        border-radius: 50px;
+        background-color: $secondary-color;
+        border-color: $secondary-color;
+        color: $white;
+        text-transform: capitalize;
+        font-weight: 500;
+        padding: 0.5rem 2rem;
+        font-size: 16px;
+        margin-top: 1rem;
+        &:hover {
+          background-color: $white;
+          color: $secondary-color;
+          border-color: $secondary-color;
+        }
+        &:focus {
+          box-shadow: none;
+          outline: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@import "../../../styles/variables";
+#cart_empty {
+  .cartEmptyWrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .promoBanner {
+      width: 100%;
+      margin-top: 60px;
+      .PromobannerWrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 30px;
+        @media #{$xsm} {
+          flex-direction: column;
+        }
+        background-image: url("../../../assets/images/promo/promocart.png");
+        background-size: cover;
+        min-height: 129px;
+        background-position: center;
+
+        .PromoBanner_title {
+          color: $secondary-color;
+          font-size: 24px;
+          font-weight: 400;
+          .secure_title {
+            font-weight: bold;
+          }
+          .icon {
+            margin-right: 10px;
+          }
+        }
+        .more_btn {
+          background-color: $secondary-color;
+          padding: 5px 20px;
+          border: none;
+          border-radius: 50px;
+          color: $white;
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+@import "../../../styles/variables";
+.subscribe_wraper {
+  background-image: url("./../../../assets/images/home/subscribebg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  h2 {
+    color: $heading-color;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    @media #{$xsm} {
+      font-size: 25px;
+    }
+    @media #{$lsm} {
+      font-size: 25px;
+    }
+    @media #{$md} {
+      font-size: 28px;
+    }
+  }
+  p {
+    color: $para-color;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  .query-form-column {
+    input,
+    select,
+    textarea {
+      background-color: transparent;
+      border: 1px solid $border-color;
+      background: $bg-color;
+      border-radius: 40px;
+      color: $black;
+      &::placeholder {
+        color: rgba(91, 108, 143, 0.5);
+      }
+      &:focus {
+        box-shadow: none;
+        border: 1px solid $white;
+        background: $white;
+      }
+    }
+    select {
+      option {
+        color: $black;
+      }
+    }
+    input {
+      padding: calc(0.375rem + 2px) calc(0.75rem + 2px);
+    }
+
+    .subscribe_btn {
+      border-radius: 50px;
+      background-color: $secondary-color;
+      border-color: $secondary-color;
+      color: $white;
+      text-transform: capitalize;
+      font-weight: 600;
+      padding: 0.5rem 2rem;
+      font-size: 18px;
+      &:focus {
+        outline: 0;
+        box-shadow: none;
+      }
+      &:hover {
+        color: $secondary-color;
+        background: $white;
+      }
+      @media #{$sm} {
+        margin-top: 2rem;
+      }
+    }
+  }
+}

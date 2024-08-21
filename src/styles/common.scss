@@ -1,0 +1,30 @@
+.primary_btn {
+  background-color: $secondary-color;
+  border-radius: 40px;
+  border: none;
+  padding: 12px 30px;
+  @media #{$xsm} {
+    padding: 5px 15px;
+    border-radius: 20px;
+    width: 100px;
+  }
+  color: $white;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.error_btn {
+  background-color: $white;
+  border-radius: 40px;
+  border: 1px solid $secondary-color;
+  padding: 12px 30px;
+  @media #{$xsm} {
+    padding: 5px 15px;
+    border-radius: 20px;
+    width: 100px;
+  }
+  color: $discount_color;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: capitalize;
+}

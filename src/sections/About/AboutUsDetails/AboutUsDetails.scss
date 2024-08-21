@@ -1,0 +1,80 @@
+@import "../../../styles/variables";
+.about_details_wrape {
+  .main_title {
+    color: $black;
+    font-weight: 600;
+    font-size: 32px;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 60%;
+    line-height: normal;
+    @media #{$sm} {
+      width: 100%;
+    }
+    @media #{$md} {
+      width: 80%;
+    }
+    @media #{$xsm} {
+      font-size: 25px;
+    }
+    @media #{$lsm} {
+      font-size: 25px;
+    }
+    @media #{$md} {
+      font-size: 28px;
+    }
+  }
+  .card_detail_wrape {
+    margin-bottom: 2rem;
+    figure {
+      height: 400px;
+      margin: 0;
+      overflow: hidden;
+      border-radius: 6px;
+      @media #{$sm, $md} {
+        margin-bottom: 2rem;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s ease-in-out;
+      }
+      &:hover {
+        img {
+          transform: scale(1.2);
+        }
+      }
+    }
+    .cardDetail {
+      .title {
+        text-transform: capitalize;
+        color: $primary-color;
+        font-weight: 600;
+        font-size: 25px;
+        margin-bottom: 1rem;
+      }
+      .subtitle {
+        color: $primary-color;
+        font-weight: 400;
+        font-size: 22px;
+        margin-bottom: 1rem;
+      }
+      .detials {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        color: $para-color;
+      }
+      ul {
+        list-style-image: url("../../../assets/images/about/checkmark.png");
+        li {
+          color: $para-color;
+          font-size: 14px;
+          margin-bottom: 0.5rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

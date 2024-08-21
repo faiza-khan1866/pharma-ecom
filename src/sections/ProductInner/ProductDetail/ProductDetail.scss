@@ -1,0 +1,208 @@
+@import "../../../styles/variables";
+.product-detail-wrape {
+  background: $white;
+  border: 1px solid $secondary-color;
+  border-radius: 6px;
+  padding: 2rem;
+  .detail-wrape {
+    @media #{$sm, $md} {
+      margin-top: 2rem;
+    }
+    .read_more {
+      font-size: 16px;
+      font-weight: 500;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid $secondary-color;
+      color: $secondary-color;
+      padding: 0;
+      margin-bottom: 1.5rem;
+      &:focus {
+        box-shadow: none;
+        outline: 0;
+      }
+    }
+    .discount {
+      margin: 0 0 1rem 0;
+      padding: 0.3rem 1.2rem;
+      background: $discount_color;
+      color: $white;
+      border-radius: 24px;
+      font-weight: 500;
+      font-size: 16px;
+      @media #{$xsm} {
+        font-size: 14px;
+      }
+    }
+    h3 {
+      font-weight: 500;
+      font-size: 24px;
+      margin: 1rem 0;
+      text-transform: capitalize;
+      @media #{$xsm} {
+        font-size: 22px;
+      }
+    }
+    .price {
+      color: $discount_color;
+      font-size: 23px;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      @media #{$xsm} {
+        font-size: 18px;
+      }
+      del {
+        color: $discount_del_color;
+        font-size: 18px;
+        font-weight: 500;
+        @media #{$xsm} {
+          font-size: 16px;
+        }
+      }
+    }
+    .rating {
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      color: #aaaaaa;
+      .rat_icon {
+        color: $footer_hover_color;
+        font-size: 16px;
+        margin: 0 0.5rem 0 0;
+      }
+    }
+
+    .detail {
+      font-weight: 400;
+      font-size: 16px;
+      margin-bottom: 1rem;
+      color: $para_color;
+      @media #{$xsm} {
+        font-size: 15px;
+      }
+    }
+    .list_style {
+      padding: 0;
+      list-style: none;
+      margin-bottom: 2rem;
+      li {
+        font-size: 14px;
+        color: $para_color;
+        margin-bottom: 0.5rem;
+        font-weight: 400;
+        span {
+          font-weight: 500;
+        }
+        .in_stock {
+          color: #12a05c;
+        }
+        .out_stock {
+          color: #ff0000;
+        }
+      }
+    }
+    .Shipping_ckt,
+    .Shipping_ckt span {
+      color: #222 !important;
+      font-weight: 600 !important;
+    }
+  }
+  .variations-wrape {
+    padding-bottom: 2rem;
+    table {
+      thead {
+        background: $secondary-color;
+        color: $white;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 15px;
+        border: 0;
+        @media #{$xsm} {
+          font-size: 14px;
+        }
+        th {
+          padding: 0.7rem 1rem;
+        }
+      }
+      tbody {
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 15px;
+        border-color: $secondary-color;
+        vertical-align: middle;
+        @media #{$xsm} {
+          font-size: 14px;
+        }
+        td {
+          // padding: 1.3rem 1rem;
+          padding: 1rem 0.5rem;
+          text-align: center;
+        }
+      }
+    }
+
+    .quantity-wrape {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .inc-btn {
+        background: transparent;
+        color: $black;
+        border: 1px solid $secondary-color;
+        border-radius: 15px;
+        padding: 0.5rem 0.5rem;
+        border-right: 0 !important;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      .dec-btn {
+        background: transparent;
+        color: $black;
+        border: 1px solid $secondary-color;
+        border-radius: 15px;
+        padding: 0.5rem 0.5rem;
+        border-left: 0 !important;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+      .quantity {
+        font-size: 16px;
+        color: $para_color;
+        font-weight: 400;
+        border-top: 1px solid $secondary-color;
+        border-bottom: 1px solid $secondary-color;
+        padding: 0.5rem 0.5rem;
+      }
+    }
+    .discount {
+      font-size: 15px;
+      font-weight: 500;
+      color: $discount_color;
+      margin: 0;
+      del {
+        color: $discount_del_color;
+        margin-left: 0.5rem;
+      }
+    }
+    .cart_btn {
+      background-color: $secondary-color;
+      border-color: $secondary-color;
+      color: $white;
+      text-transform: capitalize;
+      font-weight: 500;
+      // padding: 0.3rem 1.5rem 0.5rem 1.5rem;
+      // border-radius: 50px;
+      font-size: 15px;
+      padding: 0.3rem 1.3rem 0.4rem 1.3rem;
+      border-radius: 20px;
+      &:focus {
+        outline: 0;
+        box-shadow: none;
+      }
+      &:hover {
+        color: $secondary-color;
+        background: $white;
+      }
+    }
+  }
+}

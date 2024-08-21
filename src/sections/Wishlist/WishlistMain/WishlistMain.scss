@@ -1,0 +1,142 @@
+@import "../../../styles/variables";
+.wishlist_wrape {
+  .main_title {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    color: $heading-color;
+    @media #{$xsm} {
+      font-size: 25px;
+      text-align: center;
+    }
+    @media #{$lsm} {
+      font-size: 25px;
+    }
+    @media #{$md} {
+      font-size: 28px;
+    }
+  }
+
+  table {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    thead {
+      background: transparent;
+      color: $primary-color;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 15px;
+      border: 0;
+      @media #{$xsm} {
+        font-size: 14px;
+      }
+      th {
+        padding: 0.7rem 1rem;
+      }
+    }
+    tbody {
+      text-transform: capitalize;
+      font-weight: 500;
+      font-size: 15px;
+      border-color: rgba(0, 0, 0, 0.5);
+      vertical-align: middle;
+      @media #{$xsm} {
+        font-size: 14px;
+      }
+      td {
+        padding: 1.3rem 1rem;
+      }
+    }
+  }
+  .Product {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 15px;
+    .closIcon {
+      font-size: 18px;
+      width: 24px;
+      cursor: pointer;
+    }
+    .product-image {
+      max-height: 60px;
+      img {
+        width: 60px;
+      }
+    }
+    h5 {
+      font-weight: 500;
+      font-size: 15px;
+      color: $heading-color;
+      cursor: pointer;
+      @media #{$xsm} {
+        font-size: 14px;
+      }
+    }
+  }
+  .discount {
+    font-size: 15px;
+    font-weight: 500;
+    color: $discount_color;
+    margin: 0;
+    @media #{$xsm} {
+      font-size: 14px;
+    }
+    del {
+      color: $discount_del_color;
+      margin-left: 0.5rem;
+    }
+  }
+
+  .cart_btn {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+    color: $white;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 0.3rem 1.5rem 0.5rem 1.5rem;
+    border-radius: 50px;
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+    &:hover {
+      color: $secondary-color;
+      background: $white;
+    }
+  }
+
+  .stockStatus {
+    font-size: 15px;
+    color: $para_color;
+    margin-bottom: 0;
+    font-weight: 400;
+    @media #{$xsm} {
+      font-size: 14px;
+    }
+    span {
+      font-weight: 500;
+    }
+    .in_stock {
+      color: #12a05c;
+    }
+    .out_stock {
+      color: #ff0000;
+    }
+  }
+  .clear_wishlist_wrape {
+    text-align: right;
+    @media #{$sm} {
+      text-align: center;
+    }
+    .clear_wishlist {
+      background-color: $discount_color;
+      color: $white;
+      padding: 0.5rem 1rem;
+      font-size: 16px;
+      font-weight: 500;
+      border: none;
+      border-radius: 50px;
+    }
+  }
+}

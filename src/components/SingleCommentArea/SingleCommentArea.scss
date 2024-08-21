@@ -1,0 +1,45 @@
+@import "../../styles/variables";
+.single_comment_wrape {
+  margin-top: 2rem;
+  background: $white;
+  box-shadow: 0px 5px 24px rgba(6, 40, 61, 0.1);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  .commentHeading {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+  }
+  .single_comment {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    .commentProfile {
+      max-width: 70px;
+      max-height: 70px;
+      border-radius: 50px;
+      img {
+        border-radius: 50px;
+      }
+    }
+
+    .comment_details {
+      .comment_title {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+      }
+      .comment_date {
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+      }
+      .comment_area {
+        font-size: 14px;
+        font-weight: 400;
+        color: $para_color;
+      }
+    }
+  }
+}

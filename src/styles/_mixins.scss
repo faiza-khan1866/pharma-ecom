@@ -1,0 +1,243 @@
+@mixin transition($time) {
+  -webkit-transition: all $time ease-out 0s;
+  -moz-transition: all $time ease-out 0s;
+  -ms-transition: all $time ease-out 0s;
+  -o-transition: all $time ease-out 0s;
+  transition: all $time ease-out 0s;
+}
+
+@mixin transform($value) {
+  -webkit-transform: $value;
+  -moz-transform: $value;
+  -ms-transform: $value;
+  -o-transform: $value;
+  transform: $value;
+}
+
+@mixin user-select($value) {
+  -webkit-user-select: $value;
+  -moz-user-select: $value;
+  -ms-user-select: $value;
+  user-select: $value;
+}
+
+@mixin box-sizing($value) {
+  -webkit-box-sizing: $value;
+  -moz-box-sizing: $value;
+  box-sizing: $value;
+}
+
+@mixin animation($value) {
+  -webkit-animation: $value;
+  -moz-animation: $value;
+  -o-animation: $value;
+  animation: $value;
+}
+
+@mixin animation-delay($value) {
+  -webkit-animation-delay: $value;
+  -moz-animation-delay: $value;
+  -o-animation-delay: $value;
+  animation-delay: $value;
+}
+
+@mixin box-shadow($value) {
+  -webkit-box-shadow: $value;
+  -moz-box-shadow: $value;
+  box-shadow: $value;
+}
+
+@mixin padding-horizontal($value, $unit) {
+  padding-left: $value#{$unit};
+  padding-right: $value#{$unit};
+}
+
+@mixin padding-vertical($value, $unit) {
+  padding-top: $value#{$unit};
+  padding-bottom: $value#{$unit};
+}
+
+@mixin margin-horizontal($value, $unit) {
+  margin-left: $value#{$unit};
+  margin-right: $value#{$unit};
+}
+
+@mixin margin-vertical($value, $unit) {
+  margin-top: $value#{$unit};
+  margin-bottom: $value#{$unit};
+}
+
+// Placeholder Mixins
+@mixin placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+//simple button
+
+@mixin simpleButton($width, $float) {
+  .m-btn-simple {
+    display: block;
+    float: $float;
+    border: 1px solid $primary-color;
+    text-align: center;
+    color: $primary-color !important;
+    position: relative;
+    transition: all 0.3s ease;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: $width#{px};
+    font-size: 15px;
+    span {
+      display: inline-block;
+      width: 100%;
+      padding: 7px 45px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute !important;
+        width: 5px;
+        height: 5px;
+        // background: url(./../../../assets/icons/i_arrow2.svg) center no-repeat;
+        background: url(./../assets/icons/i_arrow2.svg) center no-repeat;
+        background-size: 100% auto;
+        width: 16px;
+        height: 16px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 15px;
+        transition: background-image 0.3s ease;
+      }
+    }
+    &:hover {
+      background-color: $primary-color;
+      color: $white !important;
+      span {
+        background-color: transparent !important;
+        &::after {
+          background: url(./../assets/icons/i_arrow2_white.svg) center no-repeat;
+          background-size: 100% auto;
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
+}
+
+@mixin navIconLeft {
+  .nav-icon-left {
+    width: 100px;
+    height: 100px;
+    margin-right: 2.5rem;
+    position: relative;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      background: $primary-color;
+      border-radius: 50%;
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      margin-top: -8px;
+      transition: all 0.3s ease;
+    }
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-bottom: 1px solid #fff;
+      border-left: 1px solid #fff;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      position: absolute;
+      right: 27px;
+      top: 50%;
+      margin-top: 4px;
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      cursor: pointer;
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        border: 1px solid $primary-color;
+        background-color: transparent;
+      }
+      &::after {
+        border-bottom: 1px solid $primary-color;
+        border-left: 1px solid $primary-color;
+      }
+    }
+  }
+}
+
+@mixin navIconRight {
+  .nav-icon-right {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      background: $primary-color;
+      border-radius: 50%;
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      margin-top: -8px;
+      transition: all 0.3s ease;
+    }
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-top: 1px solid #fff;
+      border-right: 1px solid #fff;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      position: absolute;
+      right: 29px;
+      top: 50%;
+      margin-top: 4px;
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      cursor: pointer;
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        border: 1px solid $primary-color;
+        background-color: transparent;
+      }
+      &::after {
+        border-top: 1px solid $primary-color;
+        border-right: 1px solid $primary-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+@import "../../../styles/variables";
+.product_sidebar_wrape {
+  .brand_wrape {
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 2rem;
+    h3 {
+      font-weight: 600;
+      font-size: 18px;
+      text-transform: capitalize;
+      margin-bottom: 1rem;
+      color: $heading-color;
+    }
+    .brand_list {
+      .form-check-label {
+        margin-left: 0.3rem;
+        text-transform: capitalize;
+        color: $secondary-color;
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+      }
+      .form-check-input {
+        border: 1px solid #d3d9e5;
+        border-radius: 4px;
+        &:checked {
+          background-color: $primary-color;
+          border-color: $primary-color;
+        }
+        &:focus {
+          box-shadow: none;
+        }
+      }
+      .child_cat_list {
+        padding-left: 3rem;
+        .form-check-label {
+          color: $para-color;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .price_wrape {
+    border-bottom: 1px solid $border-color;
+    padding: 2rem 0;
+    h3 {
+      font-weight: 600;
+      font-size: 18px;
+      text-transform: capitalize;
+      margin-bottom: 1rem;
+      color: $heading-color;
+    }
+    .price_range {
+      .input_range {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        .form-control {
+          border: 1px solid $border-color;
+          background: $bg-color;
+          border-radius: 30px;
+          color: $black;
+          font-size: 15px;
+          font-weight: 400;
+          &::placeholder {
+            color: rgba(91, 108, 143, 0.5);
+          }
+          &:focus {
+            box-shadow: none;
+            border: 1px solid $primary-color;
+          }
+        }
+      }
+      .filter_button {
+        border-radius: 30px;
+        background: $secondary-color;
+        border-color: $secondary-color;
+        color: $white;
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 15px;
+        padding: 0.3rem 1rem;
+        display: block;
+        margin-top: 1rem;
+        &:focus {
+          outline: 0;
+          box-shadow: none;
+        }
+        &:hover {
+          color: $secondary-color;
+          background: $white;
+        }
+      }
+      p {
+        color: $para-color;
+        font-size: 15px;
+        font-weight: 500;
+        margin: 1rem 0 0 0;
+      }
+    }
+  }
+  .rating_wrape {
+    border-bottom: 1px solid $border-color;
+    padding: 2rem 0;
+    h3 {
+      font-weight: 600;
+      font-size: 18px;
+      text-transform: capitalize;
+      margin-bottom: 1rem;
+      color: $heading-color;
+    }
+    .rating_list {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .form-check-input {
+        border: 1px solid #d3d9e5;
+        border-radius: 4px;
+        &:checked {
+          background-color: $primary-color;
+          border-color: $primary-color;
+        }
+        &:focus {
+          box-shadow: none;
+        }
+      }
+      .rat_icon {
+        color: $footer_hover_color;
+        font-size: 16px;
+        margin: 0 0 0 0.5rem;
+        @media #{$md} {
+          font-size: 14px;
+          margin: 0 0 0 0.4rem;
+        }
+      }
+    }
+  }
+}

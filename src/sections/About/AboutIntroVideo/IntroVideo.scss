@@ -1,0 +1,76 @@
+@import "../../../styles/variables";
+.intro_video_wrape {
+  border-top: 1px solid $border-color;
+  .video_wrap {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .play_icon {
+      position: absolute;
+      font-size: 80px;
+      color: $white;
+    }
+  }
+  .video_details {
+    h2 {
+      font-size: 40px;
+      font-weight: 400;
+      color: $secondary-color;
+      margin-bottom: 1rem;
+      text-transform: capitalize;
+      @media #{$xsm} {
+        font-size: 40px;
+      }
+    }
+    h4 {
+      font-size: 18px;
+      font-weight: 500;
+      color: $para-color;
+      margin-bottom: 1rem;
+      p {
+        font-size: 18px;
+        font-weight: 500;
+        color: $para-color;
+        margin-bottom: 1rem;
+      }
+    }
+    .timing {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 2rem;
+      .timing_para {
+        color: $footer_text_color;
+        font-size: 16px;
+        font-weight: 500;
+        margin-right: 1rem;
+        margin-bottom: 0;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    .about_btn {
+      border-radius: 40px;
+      font-size: 18px;
+      background-color: $secondary-color;
+      border-color: $secondary-color;
+      color: $white;
+      text-transform: capitalize;
+      font-weight: 500;
+      padding: 0.5rem 2rem;
+      &:hover {
+        color: $secondary-color;
+        background: $white;
+      }
+      &:focus {
+        box-shadow: none;
+        outline: 0;
+      }
+      @media #{$sm, $md} {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

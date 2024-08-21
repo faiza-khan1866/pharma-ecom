@@ -1,0 +1,10 @@
+@import "../../../styles/variables";
+.checkout_wraper {
+  .title_main {
+    color: $heading-color;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+  }
+}

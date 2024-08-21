@@ -1,0 +1,62 @@
+@import "../../../styles/variables";
+.features-wrape {
+  text-align: center;
+  font-weight: 500;
+  background: $white;
+  box-shadow: 0px 5px 24px rgba(6, 40, 61, 0.1);
+  border-radius: 16px;
+  padding: 1.5rem;
+
+  img {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    img {
+      animation: scaleDisappear 0.3s;
+    }
+  }
+
+  @keyframes scaleDisappear {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    60% {
+      opacity: 0;
+      transform: scale(1.2);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 1rem 0 0.3rem 0;
+    text-transform: capitalize;
+    color: $heading-color;
+  }
+  p {
+    font-size: 16px;
+    margin: 0;
+    text-transform: capitalize;
+  }
+}
+
+.features_mbl_space {
+  @media #{$sm, $md} {
+    margin-bottom: 2rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

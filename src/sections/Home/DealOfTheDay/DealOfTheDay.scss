@@ -1,0 +1,113 @@
+@import "../../../styles/variables";
+.deal_of_the_day_wraper {
+  h2 {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    color: $heading-color;
+    @media #{$xsm} {
+      font-size: 25px;
+      text-align: center;
+    }
+    @media #{$lsm} {
+      font-size: 25px;
+    }
+    @media #{$md} {
+      font-size: 28px;
+    }
+  }
+  .deals_wraper {
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    padding: 1rem;
+    figure {
+      position: relative;
+      overflow: hidden;
+      height: 200px;
+      @media #{$xsm} {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: all 0.5s ease-in-out;
+      }
+      &:hover {
+        img {
+          transform: scale(1.2);
+        }
+      }
+      .discount {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 100px;
+        padding: 0.5rem 1rem 0.3rem 1rem;
+        background: $discount_color;
+        color: $white;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0;
+      }
+    }
+    .detail_wraper {
+      .category {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+      }
+      h3 {
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-bottom: 0.5rem;
+        cursor: pointer;
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+      .price {
+        font-size: 16px;
+        margin-bottom: 0.5rem;
+        color: $discount_color;
+        font-weight: 500;
+        del {
+          color: $discount_del_color;
+        }
+      }
+      .rating {
+        margin-bottom: 1rem;
+        padding: 0;
+        .rat_icon {
+          color: $footer_hover_color;
+          font-size: 16px;
+          margin: 0;
+        }
+      }
+      .add_cart_btn {
+        border-radius: 100px;
+        font-size: 16px;
+        background-color: $secondary-color;
+        border-color: $secondary-color;
+        color: $white;
+        text-transform: capitalize;
+        font-weight: 500;
+        padding: 0.5rem 1.5rem;
+        &:hover {
+          background-color: $white;
+          color: $secondary-color;
+          border-color: $secondary-color;
+        }
+        &:focus {
+          box-shadow: none;
+          outline: 0;
+        }
+      }
+    }
+  }
+}

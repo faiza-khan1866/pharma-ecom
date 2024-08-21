@@ -1,0 +1,24 @@
+@import "../../styles/variables";
+.intro-common-wrape {
+  h2 {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 25px;
+    color: $heading-color;
+  }
+  h3 {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 20px;
+    color: $primary-color;
+  }
+  p {
+    margin: 1.5rem 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: $para-color;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

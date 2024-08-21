@@ -1,0 +1,46 @@
+@import "../../styles/variables";
+.order_complete_wrape {
+  .order_complete {
+    padding: 2rem 3rem;
+    background: $white;
+    box-shadow: 0px 5px 24px rgba(6, 40, 61, 0.1);
+    border-radius: 16px;
+    text-align: center;
+    .iconStyle {
+      margin-bottom: 1rem;
+      color: $secondary-color;
+    }
+    .title {
+      color: $primary-color;
+      font-size: 24px;
+      margin-bottom: 1rem;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      color: $para-color;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .btn_shop {
+      border-radius: 30px;
+      background: $white;
+      border-color: $secondary-color;
+      color: $black;
+      text-transform: capitalize;
+      font-weight: 500;
+      font-size: 16px;
+      padding: 0.5rem 2rem;
+      &:focus {
+        outline: 0;
+        box-shadow: none;
+      }
+      &:hover {
+        color: $white;
+        background: $secondary-color;
+      }
+    }
+  }
+}

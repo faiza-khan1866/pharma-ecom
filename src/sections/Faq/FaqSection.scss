@@ -1,0 +1,44 @@
+@import "../../styles/variables";
+.faq-wrape {
+  .main-title {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 2rem;
+    color: $heading-color;
+    text-align: center;
+    @media #{$xsm} {
+      font-size: 25px;
+      text-align: center;
+    }
+    @media #{$lsm} {
+      font-size: 25px;
+    }
+    @media #{$md} {
+      font-size: 28px;
+    }
+  }
+  .accordion {
+    .accordion-item {
+      background-color: transparent;
+      .accordion-header {
+        .accordion-button {
+          font-size: 18px;
+          font-weight: 500;
+          background: transparent;
+          color: $heading-color;
+          border-bottom: 1px solid $border-color;
+          box-shadow: none;
+        }
+      }
+      .accordion-body {
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          margin: 0;
+          color: $para-color;
+        }
+      }
+    }
+  }
+}

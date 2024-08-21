@@ -1,0 +1,84 @@
+@import "../../../styles/variables";
+.bannerslider {
+  .slick-dots {
+    bottom: 10px;
+    li {
+      button {
+        &::before {
+          color: $white;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: $white;
+    opacity: 1;
+  }
+
+  .home-header {
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 5rem;
+    @media #{$sm} {
+      height: 55vh;
+      padding: 0 1rem;
+    }
+    @media #{$md} {
+      height: 60vh;
+      padding: 0 2rem;
+    }
+    .description-wrape {
+      width: 50%;
+      @media #{$sm} {
+        width: 100%;
+      }
+      @media #{$md} {
+        width: 65%;
+      }
+      .title {
+        font-size: 36px;
+        margin-bottom: 1rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        color: $heading-color;
+        // text-transform: capitalize;
+        @media #{$sm} {
+          font-size: 30px;
+        }
+      }
+      .detail {
+        font-size: 18px;
+        margin-bottom: 1.5rem;
+        font-weight: 400;
+        color: $para-color;
+      }
+      .shop-now-btn {
+        border-radius: 5px;
+        font-size: 18px;
+        background-color: $secondary-color;
+        border-color: $secondary-color;
+        color: $white;
+        text-transform: capitalize;
+        font-weight: 500;
+        padding: 0.5rem 2rem;
+        &:hover {
+          background-color: $white;
+          color: $secondary-color;
+          border-color: $white;
+        }
+        &:focus {
+          box-shadow: none;
+          outline: 0;
+        }
+      }
+    }
+  }
+}

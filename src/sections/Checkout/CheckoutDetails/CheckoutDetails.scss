@@ -1,0 +1,135 @@
+@import "../../../styles/variables";
+#CheckoutDetails {
+  .Billing_wrapper {
+    background-color: $bg-color;
+    padding: 41px 31px;
+    .borderBottom {
+      border-bottom: 1px solid $black;
+    }
+    // main title
+    .Title_main {
+      font-size: 16px;
+      font-weight: 500;
+      color: $heading-color;
+    }
+    .Product_title {
+      color: $heading-color;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .Product_Amount {
+      color: $para-color;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .pr_22 {
+      padding-right: 22px;
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: $secondary-color;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: $primary-color;
+    }
+    // proudct details
+    .productDetails {
+      padding-bottom: 15px;
+      max-height: 200px;
+      overflow-y: scroll;
+      .middleTitle {
+        text-align: center;
+      }
+      .last_title {
+        text-align: right;
+      }
+      .productImg img {
+        height: 60px;
+        width: 60px;
+      }
+      .productQuantity {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h5 {
+          color: $black;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+      .productPrice {
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+    }
+    // proudct subtotal amount
+    .billingSubTotal,
+    .BillingShipping,
+    .BillingTotal {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .BillingTotal {
+      h5 {
+        color: $secondary-color;
+      }
+    }
+    .PrivacyPolicy {
+      p {
+        line-height: 18px;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 27px;
+        // padding-right: 41px;
+        color: $black;
+      }
+    }
+    .shipping_title {
+      color: $heading-color;
+      font-weight: 500;
+      font-size: 16px;
+    }
+    .ShipingWrapper {
+      display: flex;
+      gap: 5px;
+      justify-content: center;
+      align-items: center;
+      .form-check-input {
+        font-size: 13px;
+        &:checked {
+          background-color: $primary-color;
+          border-color: $primary-color;
+        }
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+    .billSubmitButton {
+      width: 100%;
+      border: none;
+      border-radius: 40px;
+      color: $white;
+      background-color: $checked-color;
+      padding: 13px 10px;
+    }
+  }
+}

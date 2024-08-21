@@ -1,0 +1,30 @@
+@import "../../../styles/variables";
+.account_sidebar {
+  background: $white;
+  box-shadow: 0px 5px 24px rgba(6, 40, 61, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  li {
+    a {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      text-decoration: none;
+      color: $heading-color;
+      font-weight: 500;
+      font-size: 18px;
+      display: block;
+      padding: 1rem;
+      text-transform: capitalize;
+      &:hover {
+        color: $primary-color;
+      }
+      &.active {
+        border-left: 4px solid $secondary-color;
+        color: $primary-color;
+      }
+      .icon_style {
+        font-size: 22px;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}

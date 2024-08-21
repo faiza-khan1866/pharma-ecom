@@ -1,0 +1,28 @@
+@import "../../styles/variables";
+.floating_icon_wrape {
+  position: fixed;
+  bottom: 3rem;
+  right: 2rem;
+  z-index: 9999999;
+  @media #{$sm} {
+    right: 1rem;
+  }
+  .contact-pannel-btn {
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    figure {
+      width: 55px;
+      height: 55px;
+      overflow: hidden;
+      margin: 0;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+      }
+    }
+  }
+}

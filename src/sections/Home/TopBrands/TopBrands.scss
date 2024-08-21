@@ -1,0 +1,36 @@
+@import "../../../styles/variables";
+.top_brand_wraper {
+  h2 {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    color: $heading-color;
+    @media #{$xsm} {
+      font-size: 25px;
+      text-align: center;
+    }
+    @media #{$lsm} {
+      font-size: 25px;
+    }
+    @media #{$md} {
+      font-size: 28px;
+    }
+  }
+  .img_wraper {
+    position: relative;
+    // cursor: pointer;
+    .detail_wraper {
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      h3 {
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: capitalize;
+        margin-bottom: 1rem;
+        color: $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import "../../styles/variables";
+.tags_share_wrape {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .tags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .tags_list {
+      text-align: center;
+      font-size: 15px;
+      color: $para_color;
+      font-weight: 500;
+      margin-right: 0.5rem;
+      border: 1px solid #e6e6e6;
+      border-radius: 30px;
+      font-weight: 400;
+      padding: 0.3rem 1.5rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .shareButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 15px;
+    font-weight: 500;
+    gap: 8px;
+    color: $para_color;
+    .icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      gap: 6px;
+    }
+  }
+}
